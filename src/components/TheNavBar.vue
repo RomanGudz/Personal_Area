@@ -13,7 +13,7 @@
 
       <li>
 
-        <router-link to="/">Помощь</router-link>
+        <router-link to="/help">Помощь</router-link>
 
       </li>
 
