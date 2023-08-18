@@ -19,7 +19,7 @@
 
       <li>
 
-        <a href="#">Сообщения</a>
+        <a href="#" @click.prevent="openSidebar">Сообщения</a>
 
       </li>
 
@@ -42,11 +42,16 @@ export default {
     const router = useRouter()
     const store = useStore()
 
+    const openSidebar = () => {
+      store.commit('openSidebar')
+    }
+
     return {
       logout: () => {
         store.commit('auth/logout')
         router.push('/auth')
-      }
+      },
+      openSidebar
     }
   }
 }

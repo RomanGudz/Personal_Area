@@ -20,11 +20,11 @@
         <td>
           <app-status :type="request.status" />
         </td>
-        <!-- <td>
+        <td>
           <router-link v-slot="{ navigate }" custom :to="{ name: 'Request', params: { id: request.id } }">
-            <button class="btn primary" @click="navigate">Открыть</button>
+            <button class="btn " @click="navigate">Открыть</button>
           </router-link>
-        </td> -->
+        </td>
       </tr>
     </tbody>
   </table>
